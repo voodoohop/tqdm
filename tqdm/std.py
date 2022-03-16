@@ -347,7 +347,7 @@ class tqdm(Comparable):
 
         def print_status(s):
             len_s = disp_len(s)
-            fp_write('\r' + s + (' ' * max(last_len[0] - len_s, 0)))
+            fp_write('\n' + s + (' ' * max(last_len[0] - len_s, 0)))
             last_len[0] = len_s
 
         return print_status
